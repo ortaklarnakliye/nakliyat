@@ -83,5 +83,3 @@ Bu proje, [sehirlerarasinakliyat.vip](https://sehirlerarasinakliyat.vip) web sit
 ## 📄 Lisans
 
 Bu proje özel lisans altında korunmaktadır. Tüm hakları saklıdır.
-
-NODE_VERSION=18
