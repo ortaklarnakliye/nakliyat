@@ -17,6 +17,10 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  experimental: {
+    optimizeCss: true,
+    optimizePackageImports: ['react-icons'],
+  },
 };
 
 module.exports = nextConfig; 
