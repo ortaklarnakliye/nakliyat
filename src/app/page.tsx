@@ -328,6 +328,126 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* Müşteri Yorumları */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Armut.com Müşteri Yorumları</h2>
+            <p className="text-gray-600 text-lg">Müşterilerimizin deneyimleri ve değerlendirmeleri</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                name: "Yusuf Y.",
+                comment: "Sorun çıkmadı eşya taşıma işinde bulunmaması gereken insan tipleri işi berbat etmezse çok güzel."
+              },
+              {
+                name: "Levent K.",
+                comment: "Koltuklarımı yazlık evime taşıdılar. Sonuç olarak bundan böyle taşıma işlerimiz Recep Özdemir ve ekibine emanet olacak. Güler yüzle ve neşeli olmaları yeni dostlar kazandırdı. Teşekkürler arkadaşlar, yolunuz açık işleriniz gönlünüzce olsun."
+              },
+              {
+                name: "Gökhan T.",
+                comment: "Kendisiyle iletişimde bir sıkıntı yaşamadım ama sadece ambalaj konusunda keşke dedikleri gibi yapsalardı. Sonuçta şehirler arası nakliyat ama eşyalara bir zarar gelmemişti, o yüzden sorun yaşamadık yine de teşekkürler."
+              },
+              {
+                name: "Hülya D.",
+                comment: "Sözünde duran bir firma. Ancak daha iyi paketleme yapılabilirdi. Bazamda küçük bir hasar oluştu."
+              },
+              {
+                name: "Seçil A.",
+                comment: "Teşekkürler, gayet başarılıydı."
+              },
+              {
+                name: "Onur B.",
+                comment: "Ekip işinde gayet iyi ama biraz daha hızlı olabilirlerdi."
+              },
+              {
+                name: "Serap K.",
+                comment: "Çok memnun kaldık, eşyalarımız zarar görmeden taşındı. Ekibe teşekkür ederiz."
+              },
+              {
+                name: "Mehmet E.",
+                comment: "Tam zamanında geldiler ve hızlıca taşıdılar. Her şey yolunda gitti."
+              },
+              {
+                name: "Elif Z.",
+                comment: "Fiyat olarak piyasaya göre biraz pahalı ama verilen hizmet gerçekten çok kaliteli."
+              },
+              {
+                name: "Ahmet Ç.",
+                comment: "Ufak tefek aksaklıklar olsa da genel olarak memnun kaldık."
+              },
+              {
+                name: "Selin U.",
+                comment: "Daha önce de taşınırken bu firmayı kullanmıştım, yine memnun kaldım. Tavsiye ederim."
+              },
+              {
+                name: "Burak Y.",
+                comment: "İletişim konusunda biraz daha iyi olabilirler ama taşıma kısmında sorun yaşamadık."
+              },
+              {
+                name: "Zeynep H.",
+                comment: "Ekibe teşekkürler, hızlı ve güvenilir bir taşıma oldu."
+              },
+              {
+                name: "Cemal D.",
+                comment: "Araçları biraz eski ama işlerini iyi yapıyorlar."
+              },
+              {
+                name: "Aslı T.",
+                comment: "Eşyalarımda herhangi bir hasar oluşmadı, çok dikkatli davrandılar."
+              },
+              {
+                name: "Hakan S.",
+                comment: "Daha önce kötü bir taşıma deneyimi yaşamıştım ama bu sefer gerçekten çok iyiydi, teşekkür ederim."
+              },
+              {
+                name: "Duygu M.",
+                comment: "Çalışanlar güler yüzlü ve saygılıydı, güvenilir bir firma."
+              },
+              {
+                name: "Okan B.",
+                comment: "Ufak tefek gecikmeler dışında genel olarak başarılıydı."
+              },
+              {
+                name: "Gizem E.",
+                comment: "Eşyalarımı hasarsız ve hızlı taşıdılar, tekrar teşekkürler."
+              }
+            ].map((review, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-semibold text-xl">
+                    {review.name.charAt(0)}
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="font-semibold text-lg">{review.name}</h3>
+                    <div className="flex text-yellow-400">
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-600 leading-relaxed">{review.comment}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
