@@ -4,14 +4,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Şehirlerarası Nakliyat ve Ambar Hizmetleri | Profesyonel Taşımacılık",
-  description: "İstanbul, İzmir, Antalya, Bodrum ve tüm Türkiye&apos;ye şehirlerarası nakliyat, ambar, parça eşya taşıma ve depolama hizmetleri. 20 yıllık tecrübe ve profesyonel ekip.",
+  description: "İstanbul, İzmir, Antalya, Bodrum ve tüm Türkiye'ye şehirlerarası nakliyat, ambar, parça eşya taşıma ve depolama hizmetleri. 20 yıllık tecrübe ve profesyonel ekip.",
   keywords: "şehirlerarası nakliyat, istanbul izmir nakliyat, istanbul antalya nakliyat, istanbul bodrum nakliyat, ambar hizmetleri, parça eşya taşıma, evden eve nakliyat, depolama",
   alternates: {
     canonical: "https://sehirlerarasinakliyat.vip"
   },
   openGraph: {
     title: "Şehirlerarası Nakliyat ve Ambar Hizmetleri",
-    description: "Türkiye&apos;nin her yerine profesyonel nakliyat ve taşımacılık hizmetleri",
+    description: "Türkiye'nin her yerine profesyonel nakliyat ve taşımacılık hizmetleri",
     url: "https://sehirlerarasinakliyat.vip",
     siteName: "Şehirlerarası Nakliyat",
     locale: "tr_TR",
@@ -29,7 +29,7 @@ export default function Home() {
     },
     {
       title: "Nakliye Hizmetleri",
-      description: "Profesyonel nakliye çözümleriyle Türkiye&apos;nin her yerine hizmet.",
+      description: "Profesyonel nakliye çözümleriyle Türkiye'nin her yerine hizmet.",
       link: "/blog/nakliye-hizmetleri",
       icon: "🚛"
     },
@@ -235,7 +235,7 @@ export default function Home() {
               Güvenli ve Profesyonel Şehirler Arası Nakliyat
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-              Türkiye&apos;nin her noktasına güvenilir, hızlı ve profesyonel nakliyat hizmeti
+              Türkiye nin her noktasına güvenilir, hızlı ve profesyonel nakliyat hizmeti
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -281,7 +281,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">Rotalarımız</h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Türkiye&apos;nin dört bir yanına düzenli seferlerimizle hizmetinizdeyiz
+            Türkiye nin dört bir yanına düzenli seferlerimizle hizmetinizdeyiz
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {rotalar.map((rota, index) => (
@@ -321,7 +321,7 @@ export default function Home() {
             </div>
           </div>
           <p className="text-gray-600 mb-4">
-            Türkiye&apos;nin önde gelen şehirlerarası nakliyat firması olarak, güvenilir ve profesyonel hizmet sunuyoruz.
+            Türkiye nin önde gelen şehirlerarası nakliyat firması olarak, güvenilir ve profesyonel hizmet sunuyoruz.
           </p>
           <p className="text-gray-600">
             Eşyalarınızın güvenliği bizim için önemlidir. Modern araç filomuz ve uzman ekibimizle hizmetinizdeyiz.
