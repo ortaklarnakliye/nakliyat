@@ -1,6 +1,11 @@
+'use client';
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
       <div className="container mx-auto px-4">
@@ -47,7 +52,10 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-gray-600 hover:text-blue-600 transition-colors">
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden text-gray-600 hover:text-blue-600 transition-colors"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -66,42 +74,48 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu (Hidden by default) */}
-      <div className="hidden md:hidden">
+      {/* Mobile Menu */}
+      <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden bg-white border-t border-gray-100`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
           <Link
             href="/"
             className="block px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors"
+            onClick={() => setIsMenuOpen(false)}
           >
             Ana Sayfa
           </Link>
           <Link
             href="/hizmetler"
             className="block px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors"
+            onClick={() => setIsMenuOpen(false)}
           >
             Hizmetler
           </Link>
           <Link
             href="/blog"
             className="block px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors"
+            onClick={() => setIsMenuOpen(false)}
           >
             Blog
           </Link>
           <Link
             href="/hakkimizda"
             className="block px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors"
+            onClick={() => setIsMenuOpen(false)}
           >
             Hakkımızda
           </Link>
           <Link
             href="/iletisim"
             className="block px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors"
+            onClick={() => setIsMenuOpen(false)}
           >
             İletişim
           </Link>
           <Link
             href="tel:+905456564020"
             className="block px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors"
+            onClick={() => setIsMenuOpen(false)}
           >
             📞 0545 656 40 20
           </Link>
