@@ -74,12 +74,12 @@ export default function Hizmetler() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
-      <section className="relative h-[400px] mb-16">
+      <section className="relative h-[70vh] min-h-[600px]">
         <Image
-          src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b"
+          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1920"
           alt="Hizmetler Hero"
           fill
-          className="object-cover brightness-50"
+          className="object-cover brightness-[0.3]"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-transparent">
@@ -98,12 +98,12 @@ export default function Hizmetler() {
           {services.map((service, index) => (
             <div key={index} className="group">
               <div className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group-hover:-translate-y-2">
-                <div className="relative h-48">
+                <div className="relative h-64">
                   <Image
-                    src={service.image}
+                    src={`${service.image}?q=80&w=600`}
                     alt={service.title}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-8">

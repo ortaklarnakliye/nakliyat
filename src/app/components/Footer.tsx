@@ -8,22 +8,37 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Kurumsal */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Kurumsal</h3>
+            <h3 className="text-lg font-semibold mb-4">Kurumsal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/hakkimizda" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/hakkimizda" className="text-gray-300 hover:text-white transition-colors">
                   Hakkımızda
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/iletisim" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/iletisim" className="text-gray-300 hover:text-white transition-colors">
                   İletişim
                 </Link>
+              </li>
+              <li>
+                <a href="https://sehirlerarasinakliyat.vip/" target="_blank" className="text-gray-300 hover:text-white transition-colors">
+                  Şehirler Arası Nakliyat
+                </a>
+              </li>
+              <li>
+                <a href="https://bodrumambar.tr" target="_blank" className="text-gray-300 hover:text-white transition-colors">
+                  Bodrum Ambar
+                </a>
+              </li>
+              <li>
+                <a href="https://istanbulmobiltasima.com" target="_blank" className="text-gray-300 hover:text-white transition-colors">
+                  İstanbul Mobil Taşıma
+                </a>
               </li>
             </ul>
           </div>
@@ -128,7 +143,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Ortaklar Nakliyat. Tüm hakları saklıdır.</p>
+          <p>Ortaklar Nakliyat. Tüm hakları saklıdır.</p>
         </div>
       </div>
     </footer>

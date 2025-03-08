@@ -802,7 +802,7 @@ export default function Blog() {
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[600px]">
         <Image
-          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070"
+          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1920"
           alt="Blog Hero"
           fill
           className="object-cover brightness-[0.3]"
@@ -818,32 +818,15 @@ export default function Blog() {
         </div>
       </section>
 
-      {/* Category Tabs */}
-      <div className="container mx-auto px-4 -mt-8 mb-16 relative z-10">
-        <div className="bg-white rounded-2xl shadow-xl p-4 flex justify-center gap-4 flex-wrap">
-          <button className="px-8 py-4 rounded-xl bg-blue-600 text-white font-semibold transition-all hover:bg-blue-700 hover:shadow-lg">
-            Tüm Yazılar
-          </button>
-          {categories.map((category) => (
-            <button
-              key={category}
-              className="px-8 py-4 rounded-xl text-gray-600 font-semibold hover:bg-gray-100 transition-all hover:shadow-lg"
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-      </div>
-
       {/* Blog Posts Grid */}
-      <section className="container mx-auto px-4 py-8">
+      <section className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
             <Link href={`/blog/${post.slug}`} key={post.slug} className="group">
               <article className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
                 <div className="relative h-56">
                   <Image
-                    src={post.image}
+                    src={`${post.image}?q=80&w=600`}
                     alt={post.title}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -857,20 +840,6 @@ export default function Blog() {
                 </div>
                 <div className="p-8">
                   <div className="flex items-center gap-4 text-gray-500 text-sm mb-4">
-                    {post.date && (
-                      <div className="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        <time dateTime={post.date}>
-                          {new Date(post.date).toLocaleDateString('tr-TR', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric'
-                          })}
-                        </time>
-                      </div>
-                    )}
                     {post.author && (
                       <div className="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
