@@ -336,24 +336,68 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Armut.com Müşteri Yorumları</h2>
             <p className="text-gray-600 text-lg">Müşterilerimizin deneyimleri ve değerlendirmeleri</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                name: "Yusuf Y.",
-                comment: "Sorun çıkmadı eşya taşıma işinde bulunmaması gereken insan tipleri işi berbat etmezse çok güzel."
+                name: "m **",
+                comment: "kuşadası Harmancık arası küçük Bi eşyam vardı sağolsun,recep bey kendisi bana çok yardımcı oldu yorumlarını okudum hep olumlu ide işinin erbabı olduğu belli 5000 TL,ye. anlaştık armudu kullandığım için memnunum 1000 TL kaporasını hemen gönderdim sağolasın armut,sağolasın recep bey işiniz rast gelsin"
+              },
+              {
+                name: "Bayram B.",
+                comment: "Recep bey ve ortağı  Halil bey çok samimi, çok ilgili ve işini düzgün yapan insanlar. Nakliye ihtiyacı olanlar pişman olmazlar."
+              },
+              {
+                name: "Ezgi B.",
+                comment: "Her konuda çok yardımcı oluyorlar,güvenilir ve hesaplı teşekkür ediyorum"
+              },
+              {
+                name: "Bayram B.",
+                comment: "Recep bey ve ortağı  Halil bey çok samimi, çok ilgili ve işini düzgün yapan insanlar. Nakliye ihtiyacı olanlar pişman olmazlar. "
+              },
+              {
+                name: "Mustafa K.",
+                comment: "Güleryüzlü kaliteli hizmet Recep abiye teşekkürler"
+              },
+              {
+                name: "Halit P.",
+                comment: "Ben ilgi ve alakaları için çok memnun kaldım her ihtiyacım olduğunda çalışmak isterim"
+              },
+              {
+                name: "Elif T.",
+                comment: "Çok memnun kaldım. Hızlı dönüş ve aksiyon alındı. Eşyalar sapasağlam teslim edildi. Teslimata kadar benden herhangi bir ücret talep edilmedi. İşinizi hakkı ile yapıyorsunuz. Teşekkürler."
+              },
+              {
+                name: "Necati Y.",
+                comment: "Recep bey ve ortağı Halil bey'den eşyalarımızın Bodrum'a taşınması konusunda memnun kaldık. Özellikle geniş ve uzun boyutlu cam veya aynanın  kırılma riski nedeniyle genellikle taşıyan firmalar bu riski almamalarına rağmen; Halil bey diğer eşyalarımızla birlikte cam eşyamızı kırılmadan sağlam bir şekilde getirdiler, çok teşekkür ederim"
+              },
+              {
+                name: "Olguner O.",
+                comment: "Son derece işinin ehli, dürüst, nazik, samimi ve pozitif enerjili insanlar. Pişman olmayacağınız makul hizmet. Modern ve kurumsal hayatın vahşiliğine karşı dost canlısı insanlar. Güvenebilirsiniz. Emeğinize sağlık."
+              },
+              {
+                name: "Işıl G.",
+                comment: "Mudanya’dan İzmir’e parça eşya taşımak için Recep Bey’le çalıştım. Çok memnun kaldım. Hızlıca Sorun çözme yeteneğine sahip bir ekip. İşlerini severek yaptıkları çok belli. Güvenilir, güler yüzlü ve verimli  bu hizmetinizden dolayı sizlere teşekkür ediyorum."
+              },
+              {
+                name: "Hasan D.",
+                comment: "Halil ve Recep beyleri ne kadar teşekkür etsek azdır hem benim hem de ablamın evini sıfır sorunla taşıdılar çok ilgili özenli neşeli insanlar bu devirde böyle işini iyi yapan insanlar olması insanı hem şaşırtıyor hem de mutlu ediyor. ekstra çıkan küçük islemleri de lafını bile yapmadan hallettiler. ellerinize emeğinize sağlık. Allah kazasız bol kazanclar versin."
+              },
+              {
+                name: "Berkay S.",
+                comment: "Öncelikle ilk kez Recep Bey ile nakliye yapacak arkadaşların kafasında hiç bir soru işareti olmasın. Sizi hiç bir şekilde mağdur etmez eşyanızı alır. Vaktinde alıp sağlam bir şekilde zamanında teslim eder. Kendisi gibi muhabbetide çok iyi bir insan. Allah yolunu bahtını açık eylesin, işi gücü rast gitsin inşallah. Ben kendisinden ve verdiği nakliye hizmetinden çok memnun kaldım."
+              },
+              {
+                name: "Vedat A.",
+                comment: "Nakliye işi ciddi bir iştir. Nakliyem ciddiye alındı. Müşteri memnuniyeti esastır. Memnun kaldım. Sözler ve süreler esastır. Sözlerinde durdular. Yanıltılmadım. Kandırılmadım. Aldatılmadım. Halil Aydın dört dörtlük bir insan ve adam gibi adam. Hiç üzmediler beni."
+              },
+              {
+                name: "Merve A.",
+                comment: "Recep bey Mehmet bey ve arkadaşlarına teşekkür ederim. Konuştuğumuz tarihte sorunsuz eşyalarım elime ulaştı teşekkürler"
               },
               {
                 name: "Levent K.",
                 comment: "Koltuklarımı yazlık evime taşıdılar. Sonuç olarak bundan böyle taşıma işlerimiz Recep Özdemir ve ekibine emanet olacak. Güler yüzle ve neşeli olmaları yeni dostlar kazandırdı. Teşekkürler arkadaşlar, yolunuz açık işleriniz gönlünüzce olsun."
-              },
-              {
-                name: "Gökhan T.",
-                comment: "Kendisiyle iletişimde bir sıkıntı yaşamadım ama sadece ambalaj konusunda keşke dedikleri gibi yapsalardı. Sonuçta şehirler arası nakliyat ama eşyalara bir zarar gelmemişti, o yüzden sorun yaşamadık yine de teşekkürler."
-              },
-              {
-                name: "Hülya D.",
-                comment: "Sözünde duran bir firma. Ancak daha iyi paketleme yapılabilirdi. Bazamda küçük bir hasar oluştu."
               },
               {
                 name: "Seçil A.",
